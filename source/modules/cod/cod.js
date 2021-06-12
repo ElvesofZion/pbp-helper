@@ -177,7 +177,14 @@ function responseBuilder(receivedMessage) {
 		});
 	}
 
-	let response = author + strings.roll;
+	let response = author;
+	
+//TODO: Move this to a generic utility
+//TODO: sanitize channel names since they start with '#' too
+	if(receivedMessage.annotation != '') {
+		response += ", for your '" + receivedMessage.annotation + "' roll";
+	}
+	response += strings.roll;
 
 	for (let i = results.length-1; i >= 0; i--) {
 		let result_print = '';

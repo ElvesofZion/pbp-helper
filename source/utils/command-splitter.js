@@ -25,6 +25,7 @@
  * @return {String} command.gameName Quoted name of the new game (only applicable for /init calls)
  * @return {Object} command.channel Channel object from Discord
  * @return {String} command.help Help string, null if help wasn't called
+ * @return {String} command.annotion user specificed text to go with the roll
  * @return {Array} command.dice Any numbers passed are treated as dice
  * @return {Array} command.options Anything else is treated as an option
  */
@@ -35,6 +36,7 @@ function parse(message) {
 	}
 
 	console.log('Parsing the message from ' + message.channel.guild);
+
 	let command = {
 		cmd: '',
 		author: '',
@@ -44,7 +46,8 @@ function parse(message) {
 		dice: [],
 		options: [],
 		message: {},
-		help: ''
+		help: '',
+		annotaion: ''
 	}
 
 	command.author = message.author.toString();
@@ -81,8 +84,14 @@ function parse(message) {
 	  		command.dice.push(parseInt(value));
 		}
 	}
+
+	// Extract annotation
+	let re_annotation = new RegExp(/\#(.*)/);
+	let annotation = message.content.match(re_annotation);
+	console.log(annotation);
+	command.annotation = annotation[1];
 	
-	return command; 
+	return command;
 }
 
 exports.parse = parse;
