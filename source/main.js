@@ -15,7 +15,6 @@
 //
 //  @author Shawn Gates
 */
-
 "use strict";
 
 // setup libs
@@ -44,25 +43,25 @@ client.on('ready', () => {
     console.log("Connected as " + client.user.tag);
     // List servers the bot is connected to
     console.log("Servers:");
-    client.guilds.forEach((guild) => {
+    client.guilds.cache.forEach((guild) => {
         console.log(" - " + guild.name);
 
         // List all channels
-        guild.channels.forEach((channel) => {
+        guild.channels.cache.forEach((channel) => {
             console.log(` -- ${channel.name} (${channel.type}) - ${channel.id}`);
         });
     });
 });
 
+
 // listen for messages from the bot
 client.on('message', (receivedMessage) => {
-
     // Prevent bot from responding to its own messages
     if (receivedMessage.author == client.user) {
         return;
     }
-
-if (receivedMessage.guild != 'pbp-helper-test') {
+    
+if (receivedMessage.guild.name != 'pbp-helper-test') {
     return;
 }
 

@@ -31,7 +31,7 @@ try{
 }
 
 function messageBuilder (system, content) {
-	let embed = new Discord.RichEmbed();
+	let embed = new Discord.MessageEmbed();
 
 	embed.setAuthor(system);
 	embed.setDescription(content);

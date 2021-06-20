@@ -23,6 +23,7 @@ const messageBuilder = require('../../utils/message-builder.js');
 const init = require('./init.js');
 const help = require('../../utils/help-system.js');
 const Die = require('../../utils/die.js');
+const Annotations = require('../../utils/annotations.js');
 const fs = require('fs');
 
 let cod_die = 10;
@@ -87,6 +88,7 @@ function roll(options) {
 	}
 
 	if(result >= options.again && !options.chance_die) {
+		// todo: change this to capture explosions and put them in parentheticals next to the result that spawned them
 		console.log('Roll was ' + result + ', which meets or beats the "again" threshold of ' + options.again);
 		roll({
 			explosion: true,
@@ -177,14 +179,7 @@ function responseBuilder(receivedMessage) {
 		});
 	}
 
-	let response = author;
-	
-//TODO: Move this to a generic utility
-//TODO: sanitize channel names since they start with '#' too
-	if(receivedMessage.annotation != '') {
-		response += ", for your '" + receivedMessage.annotation + "' roll";
-	}
-	response += strings.roll;
+	let response = author + Annotations.sanitize(receivedMessage) + strings.roll;
 
 	for (let i = results.length-1; i >= 0; i--) {
 		let result_print = '';

@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/ElvesofZion/pbp-helper#readme",
   "dependencies": {
-    "discord.js": "^11.6.4"
+    "discord.js": "^12.5.3"
   }
 }

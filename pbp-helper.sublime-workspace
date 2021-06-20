@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"system",
+				"systemList"
+			],
+			[
+				"syst",
+				"systemTypes"
+			],
+			[
 				"syste",
 				"systems\tabc"
 			],
@@ -259,32 +267,28 @@
 			"file": "source/main.js",
 			"settings":
 			{
-				"buffer_size": 4029,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"buffer_size": 4050,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "README.md",
+			"file": "source/help.js",
 			"settings":
 			{
-				"buffer_size": 93,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"buffer_size": 1133,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/node.sublime-build",
+			"file": "source/init.js",
 			"settings":
 			{
-				"buffer_size": 33,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "untitled.sublime-build"
+				"buffer_size": 4716,
+				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "Packages/ESLint/ESLint.sublime-build",
+	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -300,6 +304,22 @@
 			],
 			[
 				"Packages/ESLint/ESLint.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
 				""
 			]
 		]
@@ -377,10 +397,44 @@
 	"expanded_folders":
 	[
 		"/C/Users/User/Documents/Development/pbp-helper",
-		"/C/Users/User/Documents/Development/pbp-helper/source"
+		"/C/Users/User/Documents/Development/pbp-helper/source",
+		"/C/Users/User/Documents/Development/pbp-helper/source/modules",
+		"/C/Users/User/Documents/Development/pbp-helper/source/modules/AVOIAS",
+		"/C/Users/User/Documents/Development/pbp-helper/source/modules/cod",
+		"/C/Users/User/Documents/Development/pbp-helper/source/modules/sentinels",
+		"/C/Users/User/Documents/Development/pbp-helper/source/modules/sp",
+		"/C/Users/User/Documents/Development/pbp-helper/source/modules/trinity",
+		"/C/Users/User/Documents/Development/pbp-helper/source/resources"
 	],
 	"file_history":
 	[
+		"/C/Users/User/Documents/My Games/Tabletop Simulator/Graphics.json",
+		"/C/Users/User/Documents/Development/pbp-helper/source/modules/trinity/config.json",
+		"/C/Users/User/Documents/Development/pbp-helper/source/modules/trinity/trinity.js",
+		"/C/Users/User/Documents/Development/pbp-helper/source/modules/sp/sp.js",
+		"/C/Users/User/Documents/Development/pbp-helper/source/modules/sentinels/sentinels.js",
+		"/C/Users/User/Documents/Development/pbp-helper/source/modules/AVOIAS/AVOIAS.js",
+		"/C/Users/User/Documents/Development/pbp-helper/source/modules/cod/cod.js",
+		"/C/Users/User/Documents/Development/pbp-helper/source/resources/resources.json",
+		"/C/Users/User/Documents/Development/pbp-helper/source/init.js",
+		"/C/Users/User/Documents/Development/pbp-helper/README.md",
+		"/C/Users/User/Documents/Development/pbp-helper/setup.sh",
+		"/C/Users/User/Documents/Development/pbp-helper/build/setup.sh",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/node.sublime-build",
+		"/C/Users/User/Documents/Development/pbp-helper/build/node.sublime-build",
+		"/C/Users/User/Documents/Development/pbp-helper/build/setup.bat",
+		"/C/Users/User/Documents/Development/pbp-helper/source/main.js",
+		"/C/Users/User/Documents/Development/homebrewery/phb.standalone.css",
+		"/C/Users/User/Documents/Development/pbp-helper/makefile",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/pbp-helper.make.sublime-build",
+		"/C/Users/User/Documents/Development/pbp-helper/source/help.js",
+		"/C/Users/User/Documents/Development/pbp-helper/source/utils/message-builder.js",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/pbp-helper.make.json",
+		"/C/Program Files/Sublime Text 3/Packages/Makefile.sublime-package",
+		"/C/Users/User/Documents/Development/pbp-helper/package-lock.json",
+		"/C/Users/User/Documents/Development/pbp-helper/install_nvm.sh",
+		"/C/Users/User/Documents/Development/pbp-helper/secret_token.js",
+		"/C/Users/User/Documents/Development/pbp-helper/package.json",
 		"/C/Users/Shawn/Documents/Development/pbp-helper/source/modules/sp/config.json",
 		"/C/Users/Shawn/Documents/Development/pbp-helper/source/modules/tc/resources.json",
 		"/C/Users/Shawn/Documents/Development/pbp-helper/source/modules/tc/config.json",
@@ -481,14 +535,11 @@
 		"/C/Users/Shawn/Documents/Development/portfolio/src/test.html",
 		"/C/Users/Shawn/Documents/Development/portfolio/bower_components/iron-icons/iron-icons.html",
 		"/C/Users/Shawn/Documents/Development/portfolio/bower_components/app-layout/app-drawer/app-drawer.html",
-		"/C/Users/Shawn/Documents/Development/portfolio/index_.html",
-		"/C/Users/Shawn/Documents/Development/portfolio/bower_components/paper-menu-button/index.html",
-		"/C/Users/Shawn/Documents/Development/portfolio/polymer-first-elements/README.md",
-		"/C/Users/Shawn/Documents/Development/portfolio/polymer-first-elements/icon-toggle.html"
+		"/C/Users/Shawn/Documents/Development/portfolio/index_.html"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -504,6 +555,12 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"let systemAliases = new Map();",
+			"systemTypes",
+			"system",
+			"_registerModule",
+			"__dirname + '/modules/",
+			"__dirname + '/modules/' ",
 			"double",
 			"]+/;\n",
 			"double",
@@ -587,7 +644,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -596,15 +653,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4029,
+						"buffer_size": 4050,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1245,
-								1245
+								3715,
+								3715
 							]
 						],
 						"settings":
@@ -614,60 +671,61 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 45.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 93,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								93,
-								93
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1665.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/node.sublime-build",
+					"buffer": 1,
+					"file": "source/help.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 33,
+						"buffer_size": 1133,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29,
-								29
+								1133,
+								1133
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/init.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4549,
+								4549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -716,7 +774,7 @@
 	},
 	"output.exec":
 	{
-		"height": 333.0
+		"height": 543.0
 	},
 	"output.find_results":
 	{
@@ -772,7 +830,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 185.0,
+	"side_bar_width": 241.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

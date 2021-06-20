@@ -30,10 +30,10 @@
  * @return {Array} command.options Anything else is treated as an option
  */
 function parse(message) {
-	if (typeof message.content !== 'string') {
-		console.log('Error: parse requires a Message object with a content string.');
-		return;
-	}
+	// if (typeof message.content !== 'string') {
+	// 	console.log('Error: parse requires a Message object with a content string.');
+	// 	return;
+	// }
 
 	console.log('Parsing the message from ' + message.channel.guild);
 
@@ -88,7 +88,7 @@ function parse(message) {
 	// Extract annotation
 	let re_annotation = new RegExp(/\#(.*)/);
 	let annotation = message.content.match(re_annotation);
-	console.log(annotation);
+	if (annotation === null) annotation = ['',''];
 	command.annotation = annotation[1];
 	
 	return command;
